@@ -1,0 +1,23 @@
+@function color($nombre) {
+    @return map-get($map: $paleta, $key: $nombre);
+}
+
+@function reduceColor($nombre, $amount) {
+    @return lighten(color($nombre), $amount);
+}
+
+@function cambioColor($nombre, $tipo: darken, $amount: 1, $colorMix: #fff) {
+    $color: color($nombre);
+    @if $tipo == darken {
+        $color: darken($color, $amount);
+    } @else if $tipo == lighten {
+        $color: lighten($color, $amount);
+    } @else if $tipo == mixcolor {
+        $color: mix($color, $amount);
+    } @else {
+        //Add opaacity
+        $color: rgba($color, $amount);
+    }
+    @return $color;
+}
+

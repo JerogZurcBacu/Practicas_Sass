@@ -1,0 +1,21 @@
+/*
+* Variables
+*/
+
+@import 'abstracs/variables',
+        'abstracs/funciones',
+        'abstracs/universales';
+
+
+/*
+* Componentes
+*/
+
+@import 'componentes/titulos',
+        'componentes/tarjetas',
+        'componentes/botones',
+        'componentes/alertas',
+        'componentes/table',
+        'componentes/menu',
+        'componentes/toast';
+

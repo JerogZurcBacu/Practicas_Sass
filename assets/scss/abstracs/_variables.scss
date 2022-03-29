@@ -1,0 +1,41 @@
+$color_primario: blue;
+$color_secundario: red;
+$oscuro: black;
+$oscuro_opacidad: rgb($oscuro, 0.4);
+$fuente: 1.75rem;
+$brand: 'dsc';
+$primario: blue;
+$hecho: green;
+$peligro: red;
+
+$paleta: (
+    'primario': blue,
+    'hecho': green,
+    'peligro': red,
+    'color_primario': yellow,
+    'color_secundario': orange,
+    'iluminado': #ffffff
+);
+
+/*
+* Each Lista
+*/
+
+$titulos: 16, 20, 24, 32;
+
+/*
+* Each Mapa
+*/
+
+$subtitulos: (
+    "xs": 16px,
+    "md": 20px,
+    "lg": 24px,
+    "xl": 32px
+);
+
+/*
+* Each Lista Multipropiedad
+*/
+
+$subtitulos: "xs" 16px 400, "md" 20px 500, "lg" 24px 600, "xl" 32px 900;

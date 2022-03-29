@@ -1,0 +1,50 @@
+.#{$brand}-título-primario {
+    font-size: $fuente;
+    color: $color_primario;
+}
+
+.#{$brand}-título-secundario {
+    font-size: $fuente;
+    color: $color_secundario;
+}
+.#{$brand}-título-oscuro {
+    font-size: $fuente;
+    color: $oscuro_opacidad;
+    //Nesting propiedades
+    font: {
+        size: $fuente;
+        weight: 20px;
+        family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+}
+
+/*
+* Each Lista
+*/
+
+@each $size in $titulos {
+    .titulo-#{$size} {
+        font-size: $size * 1px;
+    }
+}
+
+/*
+* Each Mapa
+*/
+
+@each $nombre, $size in $subtitulos {
+    .subtitulo-#{$nombre} {
+        font-size: $size;
+    }
+}
+
+/*
+* Each Lista Multipropiedad
+*/
+
+@each $nombre, $size, $fw in $subtitulos {
+    .titulo-#{$nombre} {
+        font-size: $size;
+        font-weight: $fw;
+    }
+}
